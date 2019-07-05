@@ -12,12 +12,12 @@ def main():
     if "y" or "Y" in ask:
         print("Writing File...")
         f=open("Leeched_Source.html","+w")
-        f.write(str("""<!--LEECHED FROM"""+inp+"""\n\n-------------------------------------\n\n"""+html))
+        f.write(str("""<!--SAVED FROM """+inp+"-->"+"""\n\n-------------------------------------\n\n"""+html))
         f.close()
         wait=input("DONE")
         main()
     else:
-        print("""<!--LEECHED FROM"""+inp+"""\n\n-------------------------------------\n\n"""+html)
+        print("""<!--SAVED FROM """+inp+"-->"+"""\n\n-------------------------------------\n\n"""+html)
         wait=input("\n\nDONE")
         main()
 def setup():
