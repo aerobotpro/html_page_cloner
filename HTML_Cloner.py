@@ -1,7 +1,7 @@
 #dr.lixxard
 import requests
 def main():
-    inp=input("Welcome!\n\nEnter A Url To Pull Source From: ")
+    inp=input("\n\nWelcome!\n\nEnter A Url To Pull Response From\n\n---------->>>:")
     try:
         r=requests.get(inp)
         html=r.text
