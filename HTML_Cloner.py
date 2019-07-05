@@ -8,17 +8,17 @@ def main():
     except Exception as E:
         print(str(E))
         setup()
-    ask=input("Would You Like To Save To HTML File?(Y/N):")
+    ask=input("[SUCCESS] Would You Like To Save To HTML File?(Y/N):")
     if "y" or "Y" in ask:
         print("Writing File...")
-        f=open("Leeched_Source.html","+w")
+        f=open("Captured_Response.html","+w")
         f.write(str("""<!--SAVED FROM """+inp+"-->"+"""\n\n-------------------------------------\n\n"""+html))
         f.close()
-        wait=input("DONE")
+        wait=input("\n\nDONE\n\nPRESS ENTER")
         main()
     else:
         print("""<!--SAVED FROM """+inp+"-->"+"""\n\n-------------------------------------\n\n"""+html)
-        wait=input("\n\nDONE")
+        wait=input("\n\nPRESS ENTER")
         main()
 def setup():
     main()
