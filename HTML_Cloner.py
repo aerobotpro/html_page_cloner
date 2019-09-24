@@ -11,7 +11,7 @@ def main():
     ask=input("[SUCCESS] Would You Like To Save To HTML File?(Y/N):")
     if "y" or "Y" in ask:
         print("Writing File...")
-        f=open("Captured_Response.html","+w")
+        f=open("Captured_Response.html","w+")
         f.write(str("""<!--SAVED FROM """+inp+"-->"+"""\n\n-------------------------------------\n\n"""+html))
         f.close()
         wait=input("\n\nDONE\n\nPRESS ENTER")
