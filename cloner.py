@@ -8,7 +8,7 @@ session = HTMLSession()
 r = session.get(site)
 
 r.html.render()
-#print(r.text)
+
 fileloc = f'{getcwd()}/index.html'
 with open(fileloc, "w+", encoding="utf-8") as f:
     f.write(r.text)
