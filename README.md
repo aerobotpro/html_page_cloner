@@ -1,4 +1,4 @@
 ###VERY SIMPLE HTML PAGE CLONER###
->Python3.6+
--
->Renders JS
+> Equvalent to `ctl + s` in Chrome Browser, then opens page locally.
+- Python3.6+
+- Renders JS
