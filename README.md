@@ -3,6 +3,8 @@
 -------
 > To disable JS Rendering, simply comment-out the line with `r = html.render()`.
 -------
+> `pip install requests-html`
+-------
 - Python3.6+
 - Renders JS
 
